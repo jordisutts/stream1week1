@@ -3,6 +3,10 @@
     <head>
         <title>images floated in divs</title>
         <style>
+        body{
+            background-image: url("images/back.jpg");
+            background-size: contain;
+        }
             .containers{
                 display:inline-block;
                 width:400px;
@@ -14,11 +18,15 @@
                 float:left;
                 margin:10px;
                 border:2px solid black;
+                -webkit-filter: hue-rotate(250deg);
+                -webkit-filter: contrast(6);
             }
             #owlimg{
                 float:right;
                 margin:10px;
                 border:2px solid black;
+                -webkit-filter: sepia(7);
+                -webkit-filter: contrast(6);
             }
         </style>
     </head>

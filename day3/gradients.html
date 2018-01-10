@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Gradients</title>
+        <style>
+            h2{
+                height:150px;
+                width:300px; 
+                border: 2px solid black;
+                }
+            .linear{
+               background:linear-gradient(to left,green,blue);
+               height:150px;
+                width:300px;
+            }
+            .radial{
+                background: radial-gradient(red,yellow);
+                height:150px;
+                width:300px;
+            }
+            .transperancy{
+                background:linear-gradient(-45deg,rgba(0,0,0,0),blue);
+                height:150px;
+                width:300px;
+            }
+            .multiplestops{
+                background: linear-gradient(to right,red,yellow,green,blue);
+                height:150px;
+                width:300px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class=linear>
+            <h2>linear</h2>
+        </div>
+        <div class=radial>
+            <h2>radial</h2>
+        </div>
+        <div class=transperancy>
+            <h2>transperancy</h2>
+        </div>
+        <div class=multiplestops>
+            <h2>Multiple stops</h2>
+        </div>
+    </body>
+</html>

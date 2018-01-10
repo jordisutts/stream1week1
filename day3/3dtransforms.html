@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <style>
+            div {
+                Margin: 50px;
+                width: 200px;
+                height: 200px;
+                border: 1px solid black;
+                padding: 10px;
+                border-radius: 50px;
+            }
+            .translated:hover{
+                transform: translate(10px,100px);
+                background-color: blue;
+                transition: transform 1s ease-in-out;
+            }
+            .rotated:hover{
+                transform: rotate(720deg);
+                background-color: red;
+                transition: transform 3s ease-in-out;
+            }
+            .scaled:hover{
+                transform: scale(2,.5);
+                background-color:green;
+                transition: transform 2s ease-in-out;
+            }
+            .skewed:hover{
+                transform: skew(5deg, 10deg);
+                background-color:silver;
+                transition: transform 3s ease-in-out;
+            }
+        </style>
+    </head>
+    <body>
+        <div class=translated>translated</div> 
+        <div class=rotated>rotated</div>
+        <div class=scaled>scaled</div>
+        <div class=skewed>skewed</div>
+    </body>
+</html>
