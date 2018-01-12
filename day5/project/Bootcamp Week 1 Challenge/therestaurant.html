@@ -17,6 +17,7 @@
             font-family: 'Righteous', cursive;
             font-size: 40px;
             border: none;
+            display:flex;
         }
         
         
@@ -31,8 +32,17 @@
                     width: 120px;
                     font-size: 20px;
                 }
-                
-                
+         a {
+	    display: flex;
+	    font-size: 30px;
+	    color: black;
+	    border-bottom-color: none;
+	    }
+	       
+        #video {
+            width:500px;
+            height:420px;
+        }       
     	@media screen and (min-width: 700px){
 				
 			nav{
@@ -46,7 +56,14 @@
                     display: inline-block;
                     width: 120px;
                     font-size: 20px;
-                }	            
+                }
+            
+            a {
+			    flex-direction:row;
+			    flex: 1;
+			    text-align: center;
+			    align-items: center;
+			}
         
             #logoNav {
 			    flex-direction: row;
