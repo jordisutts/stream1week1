@@ -1,0 +1,23 @@
+Strategy, Scope, Structure, skeleton, surface
+
+strategy:
+    -reduce road congestion by car sharing
+    -give an option for non car owners to access car easily
+    -provide easy access to transport for those with drivers licence
+    -over 21 years of age
+    -easy to find, pay and rent the car no matter where you are
+    -24/7 365day usage availability
+    
+scope:
+    -on the go
+    -find information (idea, prices, usage) on gocar
+    -bookings
+    -payments
+    -locations
+    -cancellations
+    -instructions
+    
+structure:
+    -show attractive information on how it works and prices in header
+    -make finding information very easily in sidebar/nav bar
+    

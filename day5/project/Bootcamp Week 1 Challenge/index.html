@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Righteous" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="reset.css">
+    <title>Document</title>
+    
+    <style>
+    body {
+      background-image: url("images/background.jpg");
+    }
+    
+    nav{
+		font-family: 'Righteous', cursive;
+		margin: 30px auto;
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		align-items:stretch;
+		border-radius: 10px;
+		list-style-type: none;
+		padding: 10px;	
+		}
+	li{
+	    color:black;
+	    font-family:'Righteous', cursive; 
+	}	
+	a {
+	    display: flex;
+	    font-size: 30px;
+	    color: black;
+	    border-bottom-color: none;
+	}
+	
+	#logoNav{
+			font-size: 40px;
+			font-weight: bold;
+			display: flex;
+			}
+			
+        .div {
+            width: 400px;
+            height: 300px;
+            border: 2px solid black;
+            text-align: center;
+            display: flex;
+    }
+        h2{
+            font-family:'Righteous', cursive;
+            font-size:40px;
+        }
+        .spices {
+            width: 400px;
+            height:300px;
+            margin: 5px;
+            flex-direction: column;
+    }
+        .curry {
+            width: 400px;
+            height:300px;
+            margin: 5px;
+            flex-direction: column;
+    }
+        .spices img {
+            /*display:block;*/
+            margin-top: 5%;
+            margin-left:auto;
+            margin-right:auto;
+            width: 90%;
+        }
+        .curry img {
+            /*display:block;*/
+            margin-top: 5%;
+            margin-left:auto;
+            margin-right:auto;
+            width: 90%;
+        }
+    
+        .spices p {
+            font-family: 'Righteous', cursive;
+            font-size: 1.1rem;
+            flex: 1;
+        }
+        
+        .curry p {
+            font-family: 'Righteous', cursive;
+            font-size: 1.1rem;
+            flex: 1;
+        }
+        .pics{
+                display: flex;
+                flex-direction: column;
+                align-items:stretch;
+                justify-content: space-between;
+                flex-wrap: nowrap;
+            }
+            #spices1{
+                float:left;
+                margin:10px;
+                border:20px solid #ffa60c;
+                border-radius: 10px;
+            }
+            #curry1{
+                float:left;
+                margin:10px;
+                border:20px solid #ffbad7;
+                border-radius: 10px;
+            }
+
+        
+	@media screen and (min-width: 700px){
+				
+			nav{
+				width: 90%;
+				flex-flow: row;
+				align-items:baseline;
+			}
+			
+			 
+			nav ul li {
+                    display: inline-block;
+                    width: 120px;
+                    font-size: 20px;
+                }	
+				
+			#logoNav {
+			    flex-direction: row;
+				flex:5;
+				text-align: left;
+				}
+			
+			a {
+			    flex-direction:row;
+			    flex: 1;
+			    text-align: center;
+			    align-items: center;
+			}
+			
+            .pics{
+                flex-direction: row;
+                align-items:stretch;
+                justify-content: space-around;
+                flex-wrap: nowrap;
+            }
+            .div{
+                display:inline-block;
+                flex-direction:row;
+                align-items: stretch;
+                width: 30%;
+                justify-content: space-around;
+                flex-wrap:wrap;
+            }
+	}	
+    </style>
+</head>
+
+<body>
+    <nav>
+        <a id="logoNav">
+            <figure>
+                <img src="images/logo.png" alt="logo">
+            </figure>
+            India Spice
+        </a>
+        <ul>
+              <li><a href="#">Home</a></li> 
+              <li>
+                  <a href="therestaurant.html">About</a>
+              </li>
+              <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+    
+    <section class="pics">
+        <div class="spices">
+            <h2>Spices</h2>
+				<figure>
+				    <img id="spices1" src="images/spices.jpg"alt="spices">
+				</figure>
+				<p>Using only the freshest international spices</p>
+		</div>
+			
+		<div class="curry">	
+			<h2>Curry</h2>
+			    <figure>
+			        <img id="curry1" src="images/curry.jpg" alt="curry">
+			    </figure>
+			    <p>Our chefs specialty curries are among the best recipies in the country</p>
+		</div>
+	</section>
+    
+    <footer>
+
+    </footer>
+    
+</body>
+</html>

@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Flexbox</title>
+        <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+        <link href='https://fonts.googleapis.com/css?family=Dosis' rel='stylesheet' type='text/css'>
+        <style type="text/css">
+        
+        body{ 
+            background-color: orange;
+            font-family: Dosis;
+        }
+        nav{
+            font-family: roboto;
+        
+            margin: 30px auto;
+            width: 100%;
+            height: 500px;
+            display: flex;
+            flex-direction: column;
+            align-items:stretch;
+            border-radius: 10px;
+            padding: 0;    
+        }
+
+        a{
+            text-decoration: none;
+            color: black;
+            flex:1;
+            height: 30px;
+        
+            padding:20px 20px 20px 20px;
+            text-align: center;
+            font-size: 2em;
+            border:1px solid black;
+
+        }
+        #landing{
+            display: flex;
+        }
+            
+        #landing-message{
+            display:flex;
+			text-align: center;
+			font-family: Dosis;
+			font-size: 50px;
+			margin:50px 20px;
+
+        }
+        #logoNav{
+            font-size: 2em;
+            font-weight: bold;
+        }
+        .cardgroup{
+            display: flex; 
+            flex-direction: column;
+            justify-content:space-around;
+        }
+        
+        .cards {
+            width: 100%;
+            background-color: grey;
+            border: 2px solid black;
+            margin: 5px;
+            border-radius: 10px;
+            flex-direction: column;
+            
+        }
+
+        .cards img {
+            display:block;
+            margin-top: 5%;
+            margin-left:auto;
+            margin-right:auto;
+            width: 90%;
+        }
+        
+
+
+        @media screen and (min-width: 700px){
+            
+            #landing{
+                text-align: center;
+                flex-direction: row;
+                justify-content: center;
+                align-items:center;
+            }
+               
+            #landing-message{
+			    text-align: center;
+			    font-family: Dosis;
+			    font-size: 50px;
+			    margin:50px 20px; 
+            }
+            .cardgroup{
+                flex-direction: row;
+                align-items:stretch;
+                justify-content: space-around;
+                flex-wrap: nowrap;
+            }
+            .cards{
+                width: 30%;
+                align-items: stretch;
+            
+            }
+            nav{
+                /*background-color: blue;*/
+                flex-direction: row;
+                align-items:baseline;
+                justify-content: space-around;
+                height:50px;
+
+            }
+            a{
+                padding:6px;
+                border: none;
+                font-size: 1.5em;
+
+            }
+            #logoNav{
+            flex:4;
+            font-size: 1.8rem;
+            align-self: flex-start;
+            }
+
+        }
+
+        </style>
+</head>
+<body>
+
+    <nav>
+        
+            <a id="logoNav">CODE INSTITUTE</a>
+            <a href="#">Home</a>
+            <a href="#">Projects</a>
+            <a href="#">About</a>
+            <a href="#">Contact</a>
+            <a href="#">Photos</a>
+        
+
+    </nav>
+   <section class="landing">
+           <div class="landing-message">
+               <h1>Make Creative Clever Fun Apps. Simple.</h1>
+           </div>
+           <div id="landing-graphic">
+               <img id="landing-image" src="images/laptop.png" alt="laptop" width="400">
+           </div>
+   </section>
+    <section class="cardgroup">
+           <div class="cards">
+               <img src="images/graphic1.png">
+               <h2>One</h2>
+               <p>paragraph 1 goes here</p>
+           </div>
+           <div class="cards">
+               <img src="images/graphic2.png">
+               <h2>Two</h2>
+               <p> paragraph 2 goes here</p>
+           </div>
+           <div class="cards">
+               <img src="images/graphic3.png">
+               <h2>Three</h2>
+               <p>  paragraph 3 goes here</p>
+           </div>
+    </section>
+      
+</body>
+</html>

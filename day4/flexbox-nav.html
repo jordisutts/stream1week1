@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Flexbox</title>
+		<link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+		<link href='https://fonts.googleapis.com/css?family=Dosis' rel='stylesheet' type='text/css'>
+		<style type="text/css">
+		nav{
+			font-family: roboto;
+			background-color: #ffa811;
+			margin: 30px auto;
+			width: 80%;
+			height: auto;
+			display: flex;
+			flex-direction: column;
+			align-items:flex-start;
+			border-radius:0px;
+			padding: 0;	
+		}
+				
+		a{
+			text-decoration: none;
+			color: black;
+			flex:1;
+			height: auto;
+			font-family: "Dosis", sans-serif;
+			padding:20px 20px 20px 20px;
+			text-align: center;
+			font-size: 1.5em;
+			border: 1px solid line;
+
+		}
+		#logoNav{
+			font-family: 'Ind', cursive;
+			font-size: 3em;
+			font-weight: bolder;
+			width: 80%;
+			}
+		
+		.cards {
+			
+		}
+
+		.card {
+			
+		}
+		
+		.card h2 {
+			
+		}
+		
+		.card img {
+			display: flex;
+			align-items: center;
+			flex-direction: row;
+			flex-wrap: wrap;
+		}
+		
+		.card p {
+			font-family: dosis, sans-serif;
+			font-size: 1.1rem;
+			flex-direction: row;
+			background-color: #eee;
+			border: 10px solid #eee;
+		}
+		@media screen and (min-width: 700px){
+			nav{
+			flex-direction: row;
+			align-items: flex-start;
+			}
+			a{
+			flex:1;
+			border: none;
+			font-size: 1.5em;
+			}
+			#logoNav{
+			flex: 4;
+			text-align: left;
+			}
+		}
+
+		</style>
+</head>
+<body>
+
+	<nav>
+		
+			<a id="logoNav">CHOCOBLOCK</a>
+			<a href="#">Home</a>
+			<a href="#">Projects</a>
+			<a href="#">About</a>
+			<a href="#">Contact</a>
+			<a href="#">Photos</a>
+		
+
+	</nav>
+	
+	<div class="cards">
+		<img src="images/graphic1.png">
+		<h2>Web info sessions</h2>
+		<P>Make Creative Clever Fun Apps. Simple.</P>
+	</div>
+
+</body>
+</html>

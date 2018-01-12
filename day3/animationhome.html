@@ -1,0 +1,77 @@
+<!Doctype html>
+<html>
+    <head>
+        <meta chartset="UTF-8">
+        <title>text animations</title>
+        <style>
+            *{
+                margin:0;
+                padding:0;
+            }
+            body{
+                background-color: blue;
+            }
+            .text-animations{
+                list-style:none;
+                position:absolute;
+                left:50%;
+                top:50%;
+                transform: translateX(-50) translateY(-50);
+            }
+            .text-animations li{
+                display:inline-block;
+                margin-right:5px;
+                font-weight:300;
+                font-size:5em;
+                color:black;
+                opacity:1;
+                transition:all 2.5s ease;
+            }
+            .text-animations li:last-child{
+                margin-right: 0;
+            }
+            .text-animations.hidden{
+                opacity: 1;
+            }
+            
+            .text-animations.hidden li:nth-child(1) {transform: translateX(-200px) translateY(-200px);}
+            .text-animations.hidden li:nth-child(1) {transform: translateX(20px) translateY(100px);}            
+            .text-animations.hidden li:nth-child(1) {transform: translateX(-150px) translateY(-80px);}            
+            .text-animations.hidden li:nth-child(1) {transform: translateX(10px) translateY(-200px);}            
+            .text-animations.hidden li:nth-child(1) {transform: translateX(20px) translateY(80px);}         
+            .text-animations.hidden li:nth-child(1) {transform: translateX(-30px) translateY(-1500px);}            
+            .text-animations.hidden li:nth-child(1) {transform: translateX(-300px) translateY(200px);}            
+            .text-animations.hidden li:nth-child(1) {transform: translateX(20px) translateY(-20px);}            
+            .text-animations.hidden li:nth-child(1) {transform: translateX(30px) translateY(200px);}            
+            .text-animations.hidden li:nth-child(1) {transform: translateX(-200px) translateY(-200px);}            
+            .text-animations.hidden li:nth-child(1) {transform: translateX(20px) translateY(100px);}            
+            .text-animations.hidden li:nth-child(1) {transform: translateX(100px) translateY(-200px);}            
+            .text-animations.hidden li:nth-child(1) {transform: translateX(-200px) translateY(200px);}            
+        </style>
+    </head>
+    <body>
+        <ul class=text-animations hidden>
+            <li>J</li>
+            <li>O</li>
+            <li>R</li>
+            <li>D</li>
+            <li>A</li>
+            <li>N</li>
+            <li> </li>
+            <li>S</li>
+            <li>U</li>
+            <li>T</li>
+            <li>T</li>
+            <li>O</li>
+            <li>N</li>
+        </ul>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <script type="text/javascript">
+            /*global $*/(function() {
+                setTimeout(function() {
+                /*global $*/('.text-animations').removeClass('hidden');
+                }, 500);
+            });
+        </script>
+    </body>
+</html>

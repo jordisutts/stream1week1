@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Righteous" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="reset.css">
+    <title>Document</title>
+    <style>
+            body {
+      background-image: url("images/background.jpg");
+    }
+    
+        nav {
+            width:90%; height: 400px;
+            font-family: 'Righteous', cursive;
+            font-size: 40px;
+            border: none;
+        }
+        
+        
+        footer{
+        height:100px;
+        width: 90%;
+        background-color: none
+        }
+        
+        nav ul li {
+                    display: inline-block;
+                    width: 120px;
+                    font-size: 20px;
+                }
+                
+                
+    	@media screen and (min-width: 700px){
+				
+			nav{
+				width: 90%;
+				flex-flow: row;
+				align-items:baseline;
+			}
+			
+			 
+			nav ul li {
+                    display: inline-block;
+                    width: 120px;
+                    font-size: 20px;
+                }	            
+        
+            #logoNav {
+			    flex-direction: row;
+				flex:5;
+				text-align: left;
+				}
+                
+    </style>
+</head>
+<body>
+    <nav>
+        <a id="logoNav">
+            <figure>
+                <img src="images/logo.png" alt="logo">
+            </figure>
+            India Spice
+        </a>
+        <ul>
+              <li>
+                  <a href="index.html" src="/day5/project/Bootcamp Week 1 Challenge/index.html">Home</a>
+              </li>
+              <li>
+              <a href="therestaurant.html">About</a>
+              </li>
+              <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+    
+    
+    <section>
+        <figure>
+            <video controls="controls" height="300px" width="400px" preload="metadata" autoplay muted loop>
+               <source src="video/video.mp4#t=20,50" type="video/mp4">
+            </video>
+        </figure>   
+    </section>
+    
+    <footer>
+        <nav>
+            <a href="index.html" src="/day5/project/Bootcamp Week 1 Challenge/index.html">Back to home</a>
+        </nav>
+        
+    </footer>
+    
+</body>
+</html>
