@@ -110,7 +110,10 @@
                 border-radius: 10px;
             }
 
-        
+        footer {
+            padding: 10px;
+            margin-top: 100px;
+        }
 	@media screen and (min-width: 700px){
 				
 			nav{
@@ -151,9 +154,64 @@
                 align-items: stretch;
                 width: 30%;
                 justify-content: space-around;
-                flex-wrap:wrap;
+                flex-wrap: nowrap;
             }
-	}	
+	}
+	         #container{
+            width: 550px;
+            margin: auto;
+	
+
+         }
+
+         legend{
+            font-size: 30px;
+            background-color: #fff;
+            border-radius: 5px;
+            border: 1px solid #999;
+            padding: 4px 15px;
+         }
+            
+         label.field{
+            display: block;
+            text-align: right;
+            width: 100px;
+            float: left;
+            clear: both;
+
+         }
+         input{
+            width: 200px;
+            border-radius: 5px;
+            padding: 6px 8px;
+         }
+         .field{
+            padding: 6px 8px;
+         }
+
+         #currency{
+             width: 220px;
+             border-radius: 5px;
+             padding: 6px 8px;
+         }
+
+         fieldset{
+            width: 450px;
+            border: 1px solid #999;
+            border-radius: 20px;
+            clear: both;
+            padding: 20px;
+            margin-bottom: 100px;
+            background-color:rgba(129, 187, 201,.2)
+         }
+         
+         input:focus{
+            background-color:lemonchiffon;
+         }
+         
+         .check {
+            width:50px;
+         }
     </style>
 </head>
 
@@ -193,7 +251,35 @@
 	</section>
     
     <footer>
-
+        <div id=container>
+            <form>
+                <fieldset>
+                    <legend>Bookings</legend>
+                    <label for="Name" class="field">Name</label>
+                        <input id="Name" required="" type="text" name="Name" placeholder="Name"/>
+                     
+                     <label for="Email" class="field">Email Address</label>
+                        <input id="Email Address" required="" type="email" name="Email Address" autofocus placeholder="Email Address"/>
+                     
+                     <label for="Phone Number" class="field">Phone Number</label>
+                        <input id="Phone Number" Pattern="08[3-9]{1}[0-9]{7}" type="text" name="Phone Number" placeholder="Phone Number"/>
+                        
+                    <label for="Date of Reservation" class="field">Date of Reservation</label>
+                        <input id="Date of Reservation" type="date" name="Date of Reservation" placeholder="Date"/>
+                    <fieldset>
+                        <label for="Number of Guests">Number of Guests</label>
+                          <select id="Number of Guests">
+                             <option value="2">2</option>
+                             <option value="3">3</option>
+                             <option value="4">4</option>
+                             <option value="5">5</option>
+                             <option value="5+">5+</option>
+                          </select>
+                   </fieldset>
+                   <label for="submit" class="field">Submit</label>
+                        <input id="submit" type="submit" name="submit"/>
+                </fieldset>
+            </form>
     </footer>
     
 </body>
