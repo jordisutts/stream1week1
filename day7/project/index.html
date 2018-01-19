@@ -28,14 +28,23 @@
     .navbar-default .navbar-brand{
         color: #FB0C0C;
     }
-    .pics {
-        border: 10px solid #FAA666;
+    .img-responsive {
+        border: 20px solid #FBF5EB;
     }
     h2 {
-        color: #F36A03;
+        color: #D57F51;
+        font-family: 'Anton', sans-serif;
+    }
+    ul {
+        font-size: 15px;
+    }
+    a {
+        color:#FB0C0C;
+        font-family: 'Anton', sans-serif;
+        font-size: 20px;
     }
             body {
-            padding-top:70px;
+            padding-top:100px;
             background-color: #FBF5EB ;
         }
     </style>
@@ -54,10 +63,11 @@
             </div>
             <ul id="myMenu" class="nav navbar-right collapse navbar-collapse nav-pills
             nav-justified">
-                <li class="active"><a href="#">Home</a></li>
-                <li><a href="#">Breakfast</a></li>
-                <li><a href="#">Lunch</a></li>
-                <li><a href="#">Evening</a></li>
+                <li><a href="#">Home</a></li>
+                <li><a href="breakfast.html">Breakfast</a></li>
+                <li><a href="lunch.html">Lunch</a></li>
+                <li><a href="evening.html">Evening</a></li>
+                <li><a href="form.html">Feedback</a></li>
             </ul>
         </div>
     </nav>
@@ -65,37 +75,36 @@
                 <div class="row">
                     <div class="col-sm-4">
                         <h2>Breakfast</h2>
-                        <img class="pics" src="GPimages/breakfast.jpeg" alt="breakfast">
+                        <img class="img-responsive" src="images/breakfast.jpeg" alt="breakfast">
                         <p>
                             There are many breakfast spots close to campus catering to all tastes.
                             From a quick coffee and a scone to a full Irish breakfast, you can find a spot
                             that suits you best.
                         </p>
-                        <button data-target="#myModal" class="btn btn-success btn-md">Button</button>
+                        <a href="breakfast.html" class="btn btn-default btn-md">Coffee me</a>
                     </div>
                     <div class="col-sm-4">
                         <h2>Lunch</h2>
-                        <img class="pics" src="GPimages/lunch.jpg" alt="lunch">
+                        <img class="img-responsive" src="images/lunch.jpg" alt="lunch">
                         <p>
                             You wont be hard pushed to find a nice lunch spot nearby.
                             Being located in Templebar, there are a multitude of varieties of food spots from
                             dine and dash burrito bars to some classier sit down and treat yourself restaurants.
                         </p>
-                        <a href="#" class="btn btn-success btn-md">Learn</a>
+                        <a href="lunch.html" class="btn btn-default btn-md">Feed me</a>
                     </div>
                     <div class="col-sm-4">
                         <h2>Evening</h2>
-                        <img class="pics" src="GPimages/evening.jpeg" alt="evening">
+                        <img class="img-responsive" src="images/evening.jpeg" alt="evening">
                         <p>
                             Whether you want to sit down for a relaxing post study pint or
                             drink yourself into next week, Templebar has many nice pubs and bars.
                             Live music bars are also quite popular around the area so dont forget your dancing shoes!
                         </p>
-                        <a href="#" class="btn btn-success btn-md">Learn</a>
+                        <a href="evening.html" class="btn btn-default btn-md">Pint Please!</a>
                     </div>
                 </div>
                 <hr />
-
 <script src="https://code.jquery.com/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>   
 </body>

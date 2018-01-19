@@ -1,0 +1,188 @@
+<html>
+   <head>
+   <meta charset="UTF-8">
+      <title>Form</title>
+      <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+   
+      <link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+            type="text/css">
+      <style type="text/css">
+
+      body{
+         font-family: 'Roboto', sans-serif;
+         
+      }
+         #container{
+            width: 500px;
+            margin: auto;
+            
+            padding: 20px;
+        
+         }
+
+         legend{
+            font-size: 30px;
+            background-color: #FAE41C;
+            border-radius: 5px;
+            border: 1px solid #999;
+            padding: 4px 15px;
+            color: #FB0C0C;
+         }
+            
+         label.field{
+            display: block;
+            text-align: right;
+            width: 100px;
+            float: left;
+            clear: both;
+         }
+         label{
+             text-align: right;
+         }
+         input{
+            width: 200px;
+            border-radius: 5px;
+            padding: 6px 8px;
+            margin: 10px;
+           
+         }
+         input:focus{
+             background-color: #FAE41C;
+         }
+         .field{
+            padding: 6px 8px;
+         }
+
+         fieldset{
+            width: 450px;
+            border: 1px solid #999;
+            border-radius: 20px;
+            clear: both;
+            padding: 20px;
+            margin-bottom: 10px;
+            background-color: #FBF5EB;
+
+         }
+    
+    .navbar-default {
+            background-color: #FAE41C;
+        }
+    .navbar-brand {
+        font-family: 'Anton', sans-serif;
+        font-size: 40px;
+    }
+    .navbar-default .navbar-brand{
+        color: #FB0C0C;
+    }
+         body {
+            padding-top:90px;
+            background-color: #FBF5EB;
+            
+        }
+        a{
+            color: #FB0C0C;
+        }
+      </style>
+   </head>
+   <body>
+      <nav class="navbar navbar-default navbar-fixed-top">    <!--navbar-fixed-top *now have to style with css to give padding-->
+        <div class="container">
+            <div class="navbar-header">
+                <a href="#" class="navbar-brand"
+                >LocalEats</a>
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#myMenu">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+            <ul id="myMenu" class="nav navbar-right collapse navbar-collapse nav-pills
+            nav-justified">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="breakfast.html">Breakfast</a></li>
+                <li><a href="lunch.html">Lunch</a></li>
+                <li><a href="evening.html">Evening</a></li>
+                <li><a href="form.html">Feedback</a></li>
+            </ul>
+        </div>
+      </nav>
+      <div id="container">
+           <form id="UserRegForm" action="server_side_script.php" method="post">
+               <fieldset>
+                   <legend>Feedback</legend>
+                   
+                   <label for="fname" class="field">
+                   Firstname:</label><input type="text" id="fname"
+                   placeholder="first name" name="fname" autocomplete="on"
+                   required/>
+                  
+                   <label for="email" class="field">
+                   Email:</label><input id="email" type="email" name="email"
+                   placeholder="enter email" required autofocus/>
+                   
+                   <label for="mobile" class="field">
+                   Mobile:</label><input id="mobile" type="text" name="mobile"
+                   placeholder="mobile number" pattern="08[3-9]{1}[0-9]{7}"
+                   title="08 followed by 3-9, then a 7 digit mobile number"/>
+                  
+                   
+                   
+                </fieldset>
+                
+                <fieldset>
+                    <label><input type="checkbox" name="menu" value="Starter">Starter</label>
+                    <label><input type="checkbox" name="menu" value="Main">Main</label>
+                    <label><input type="checkbox" name="menu" value="Dessert">Dessert</label>
+                </fieldset>
+                
+                <fieldset>
+                    <label><input type="radio" name="gender" value="male"> Male</label>
+                    <label><input type="radio" name="gender" value="female"> Female</label>
+                    <label><input type="radio" name="gender" value="other"> Other</label>
+                </fieldset>
+                
+               
+                
+                <fieldset>
+                    <label>Breakfast Preference:
+                        <input class="breakfast" list="breakfast">
+                        
+                            <datalist id="breakfast">
+                                <option value="Subway">
+                                <option value="Saburrito">
+                           </datalist>
+                    </label>  
+                </fieldset>
+                
+                 <fieldset>
+                    <label>Lunch Preference:
+                        <input class="lunch" list="lunch">
+                        
+                            <datalist id="lunch">
+                                <option value="Subway">
+                                <option value="Saburrito">
+                            </datalist>
+                    </label>
+                </fieldset>
+                
+                 <fieldset>
+                    <label>Evening Preference:
+                        <input class="lunch" list="lunch">
+                        
+                            <datalist id="lunch">
+                                <option value="Subway">
+                                <option value="Saburrito">
+                            </datalist>
+                    </label>
+                </fieldset>
+                
+                <label for="label" class="field">
+                   </label><input id="label" type="submit" name="label" value="submit"/>
+                
+           </form> 
+      </div>
+   </body>
+   <script src="https://code.jquery.com/jquery.min.js"></script>
+   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> 
+</html>

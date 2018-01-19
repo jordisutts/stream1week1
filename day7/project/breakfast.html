@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <title>Document</title>
+</head>
+<body>
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Bootstrap</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">
+    <style type="text/css">
+    
+     .navbar-default {
+            background-color: #FAE41C;
+            
+        }
+    .navbar-brand {
+        font-family: 'Anton', sans-serif;
+        font-size: 40px;
+    }
+            body {
+            padding-top:70px;
+        }
+         .navbar-default .navbar-brand{
+       color: #FB0C0C
+;
+   }
+        .lunchHeader{
+            text-align:center;
+        }
+        
+           body {
+           padding-top:100px;
+           background-color: #FBF5EB;
+       }
+       a{
+           color:#FB0C0C;
+           font-family: 'Anton', sans-serif;
+           font-size:20px;
+       }
+       h2{
+           color:#D57F51;
+            font-family: 'Anton', sans-serif;
+       }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-default navbar-fixed-top">    <!--navbar-fixed-top *now have to style with css to give padding-->
+        <div class="container">
+            <div class="navbar-header">
+                <a href="#" class="navbar-brand"
+                >LocalEats</a>
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#myMenu">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+            <ul id="myMenu" class="nav navbar-right collapse navbar-collapse nav-pills
+            nav-justified">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#">Breakfast</a></li>
+                <li><a href="lunch.html">Lunch</a></li>
+                <li><a href="evening.html">Evening</a></li>
+                <li><a href="form.html">Feedback</a></li>
+            </ul>
+        </div>
+    </nav>
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <h2 class="lunchHeader">Breakfast</h2>
+                        <p>
+                          Pick from a range of coffee shops for that morning pick-me-up and a breakfast pastry.Stop at a convienence store for a quick breakfast bite or choose one of the restaurants for a more leisurely brunch. 
+                        </p>
+                        <div class="container">
+  
+  <p>Click on options to see all of our lunch choices</p>
+<div class="panel-group" id="accordion">
+                       <div class="panel panel-default">
+                           <div class="panel-heading">
+                               <h4 class="panel-title">
+                                   <a data-toggle="collapse" href="#collapseOne" data-parent="#accordion">
+                                   Coffee Shops</a>
+                               </h4>
+                           </div>
+                               <div id="collapseOne" class="panel-collapse collapse foodInfo">
+                                   <div class="panel-body">
+                                       <h2>Starbucks</h2>
+                                       <img src="images/starbucks.jpg" alt="starbucks restaurant facade"/>
+                                      <p>World famous coffee.Grap a cup and study with friends!</p>
+                                      <p>Price:<span class="glyphicon glyphicon-euro"></span></p>
+                                      <h2>Costa Coffee</h2>
+                                      <img src="images/costa.jpg" alt="cups of costa coffee"/>
+                                      <p>Great casual sit down breakfast atmosphere </p>
+                                      <p>Price:<span class="glyphicon glyphicon-euro"></span></p>
+                                    <h2>Insomnia Coffee</h2>
+                                    <img src="images/insomnia.jpeg" alt="cups of insomnia coffee"/>
+                                    
+                                    <p>Great coffee</p>
+                                    <p>Price:<span class="glyphicon glyphicon-euro"></span></p>
+                                   </div>
+                               </div>
+                       </div>
+                   </div>
+                       <div class="panel panel-default">
+                           <div class="panel-heading">
+                               <h4 class="panel-title">
+                                   <a data-toggle="collapse" href="#collapseTwo" data-parent="#accordion">
+                                   Convenience</a>
+                               </h4>
+                           </div>
+                               <div id="collapseTwo" class="panel-collapse collapse">
+                                   <div class="panel-body">
+                                       <h2>Londis</h2>
+                                       <img src="images/londis.jpg" alt="facade of a Dublin Londis"/>
+            
+                                       <p>
+                                          Good for a quick breakfast savory pastry.
+                                       </p>
+                                        <p>Price:<span class="glyphicon glyphicon-euro"></span></p>
+                                        <h2>Daybreak</h2>
+                                       <img src="images/daybreak.jpg" alt="outside Mexico to Rome Restaurant"/>
+            
+                                       <p>
+                                           Savory pastries and snacks
+                                       </p>
+                                        <p>Price<span class="glyphicon glyphicon-euro"></span></p>
+                                        
+                                   </div>
+                               </div>
+                       </div>
+                    <div class="panel panel-default">
+                           <div class="panel-heading">
+                               <h4 class="panel-title">
+                                   <a data-toggle="collapse" href="#collapseThree" data-parent="#accordion">Restaurants
+                                   </a>
+                               </h4>
+                           </div>
+                               <div id="collapseThree" class="panel-collapse collapse">
+                                   <div class="panel-body">
+                                       <h2>Elephant and Castle</h2>
+                                       <img src="images/elephant.jpg" alt="outside Elephant and Castle Restaurant"/>
+            
+                                       <p>
+                                           Delicious brunch option 
+                                       </p>
+                                        <p>Price:<span class="glyphicon glyphicon-euro"></span><span class="glyphicon glyphicon-euro"></span><span class="glyphicon glyphicon-euro"></span></p>
+                                        <h2>Queen of Tarts</h2>
+                                       <img src="images/queen.jpg" alt="outside Queen of Tarts Restaurant"/>
+            
+                                       <p>
+                                           Yummy brunch pastries
+                                       </p>
+                                        <p>Price:<span class="glyphicon glyphicon-euro"></span><span class="glyphicon glyphicon-euro"></span><span class="glyphicon glyphicon-euro"></p>
+                                        
+                                   </div>
+                               </div>
+                       </div>
+                    
+                <hr />
+<script src="https://code.jquery.com/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>   
+</body>
+</html>
