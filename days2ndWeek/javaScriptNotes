@@ -1,296 +1,45 @@
-/* let students = ["ann marie", "colm", "cristian", "dan", "jord"];
 
-students.shift("Nicola")
-
-console.log(students[0]); */
-
-/* let myString = "Oh what a beautiful day";
-
-let myArray = myString.split(" ");
-
-foundWord = myArray.indexOf("morning");
-
-if(foundWord != -1) {
-  console.log(myArray[foundWord]);
-} else {
-  console.log("Sorry, not in this array!");
-} */
-
-/*console.log(myString);
-console.log(myArray[0]);
-console.log(myArray[1]);
-console.log(myArray[2]);
-console.log(myArray[3]);
-console.log(myArray[4]);*/
-
-/* let myNumber = Number(prompt("Enter a number:"))
-
-for(let i = 0; i < myNumber; i++) {
-  console.log(i);
-} */
-
-/*let myNumber = Number(prompt("Enter number between 0 and 10:"))
-
-for (let i = 1; i  <= 10; i++) {
-  console.log(i*myNumber)
-}
-*/
-
-/*let beers = ["Heineken", "Bud", "Grolsch", "Asahi","Tiger", "Peroni", "Krombacher",
-"Brew dog", "Corona", "Coors"];
-
-for (var x in beers) {
-  console.log(beers[x]);
-}
-foundWord = beers.indexOf("Peroni");
-if(foundWord != -1) {
-  console.log(beers[foundWord]);
-}
-*/
-
-/*
-let beers = ["Heineken", "Bud", "Grolsch", "Asahi","Tiger", "Peroni", "Krombacher",
-"Brew dog", "Corona", "Coors"];
-
-let beersbackwards = []
-
-for (let x = beers.length -1; x >=0; x--) {
-  beersbackwards.push(beers[x]);
-}
-console.log(beersbackwards);
-
-for( let i = 0; i < beersbackwards.length; i++){
-  console.log(beersbackwards[i]);
-}
-*/
-
-/*beers.push("Heineken", "Bud", "Grolsch", "Asahi","Tiger", "Peroni", "Krombacher",
-"Brew dog", "Corona", "Coors");
-
-console.log(beers[0]);
-console.log(beers[1]);
-console.log(beers[2]);
-console.log(beers[3]);
-console.log(beers[4]);
-console.log(beers[5]);
-console.log(beers[6]);
-console.log(beers[7]);
-console.log(beers[8]);
-console.log(beers[9]);*/
-
-/* for(let x = students.length - 1; x >= 0; x--) {
-  console.log(students[x]);
-}*/
-
-/*
-let age = prompt("how old are you?");
-
-age >= 18 ? 
-    age <= 21 ?
-      console.log("You Probably cant party in the club") :
-      console.log("you, you can party") :
-console.log("sorry bud maybe next year");
-
-*/
-
-/*
-
-let myString = "Oh what a beautiful morning"
-
-let checkArray = ["Oh", "it", "is", "beautiful", "today"];
-    
-let myArray = myString.split(" ");
-
-for(let x in checkArray) {
-    console.log(checkArray[x]);
-    foundWord = myArray.indexOf(checkArray[x]);
-    if(foundWord == -1) {
-      myArray.push(checkArray[x]);
-    }
-}
-console.log(myArray) */
-
-/* let myArray = ["jameson", "teelings", "bushmills", "connemara", "powers", "paddys", "tullamore dew"];
-
-let myFave = prompt("What is your favourite Irish whiskey?");
-
-let foundWord = myArray.indexOf(myFave.toLowerCase());
-
-if(foundWord == -1) {
-  myArray.push(myFave)
-} else {
-  alert("you have great taste! I love " + myArray[foundWord] + " too.")
-}
-for (let x in myArray) {
-  console.log(myArray[x])  
-} 
-
-let mySentence = "";
-
-for(let i in myArray) {
-  mySentence += myArray
-}
-console.log(mySentence)*/
-
-/*var profile = "I am a web developer developing in html css and javascript. I love JavaScript and doughnuts."
-profile=profile.toLowerCase();
-let myArray = profile.split(" ");
-
-let newArray = "";
-
-var stops = ["i", "am", "a", "and"];
-
-for (let x in myArray) {
-  if(stops.indexOf(myArray[x]) == -1)
-   newArray += myArray[x] + " ";
-}
-
-console.log(newArray); */
-
-/*while (true) {
-  let yesNo = prompt("should we continue?");
-  
-  if(yesNo == "no") {
-    break;
-  }
-} */
-
-/* let counter = 1;
-
-do {
-console.log("counting again " + counter);
-  counter++;
-}while (counter <= 10); */
-
-//------------------------------------------
-/* let i = 3;
-
-while(i) {
-  console.log(i--);
-}   */
-//--------------------------------------------------
-/*function countFromTo(num1 ,num2) {
-  for(i = num1; i<=num2; i++) {
-    console.log(i);
-  }
-}
-countFromTo(30, 60); */
-
-//------------------------------------------------
-/*function multiplesTable(a) {
-  for(let i = 1; i<=10; i++) {
-    console.log(i*a)
-  }
-}
-multiplesTable(2) */
-
-//--------------------------------------------------
-/*function areaOfCircle (radius) {
-  let circleArea= 3.1415927 * (radius * radius);
-  return circleArea;
-}
-console.log("The area is: " + areaOfCircle(10));
-
-let myArea = areaOfCircle(15);
-let cylinderLength = 35;
-let cylinderArea = myArea * cylinderLength;
-
-console.log("The area of the cylinder would be: " + cylinderArea);  */
-//-------------------------------------------
-/*function ageCheck(age) {
-  if (age >=18) {
-    return true;
-  } else {
-    return false;
-  }
-}
-
-let myAge = prompt("What is your age?");
-
-if(ageCheck(myAge)) {
-  alert("welcome to the party!");
-} else {
-  alert ("run and grab us some ice");
-} */
-//------------------------------------------------
-
-/*function maxNum(a, b) {
-  if (a >= b) {
-    return a;
-  } else {
-    return b;
-  }
-}
-maxNum (8, 24); */
-
-//--------------------------------
-
-/*myArray = ["a", "e", "i", "o", "u"];
-
-function vowelCheck (x) {
-  if(x.length > 1) {
-    return"Error! one character at a time";
-  }
-  if (x === "a"|| x === "e"|| x === "i"|| x === "o"|| x === "u") {
-   return " is a vowel";
-  } else {
-    return " is a consonant";
-  }
-}
-vowelCheck("b");  */
-//--------------------------------
-/* function maxNum(a, b, c) {
-  if (a >= b && a >= c) {
-    return a;
-  } else if (b >= c) {
-    return b;
-  } else {
-    return c;
-  }
-}
-maxNum (250, 100, 350); */
-
-//------------CALL BACK EXAMPLES BELOW------------------------------------
-
-/* function ask(question, yes, no) {
-  if(confirm(question)) {
-    yes();
-  } else {
-    no();
-  }
-}
-function showOk() {
-  alert("Good choice");
-}
-function showCancel() {
-  alert("You've gone soft");
-}
-ask("Do you agree to continue?", showOk, showCancel);  
-
-/------
-function whatDayIsIt(callback) {
-  var day = (new Date().getDay());
-  callback(day);
-}
-
-function dayOfWeek (day) {
-  if (day === 0 || day === 6) {
-    console.log("It's the weekend!");
-  } else {
-    console.log("Still not the weekend, bud");
-  }
-}
-whatDayIsIt(dayOfWeek); */
-//-------------------------------------------
-
-//let somethingRed = prompt("Enter something red worn by Superman");
-
-/*let superhero = {
+/* let superhero = {
   firstName: "Clarke",
   secondName: "Kent",
   title: "Superman",
  // [somethingRed]: "Red",
  isWearingSuit: false,
+ powers: [
+   {
+     name: "flight",
+     description: "can fly"
+   },
+   {
+     name:"super strength",
+     description: "can lift heavy things",
+   },
+   {name: "super speed",
+     description: "run faster than a speeding bullet"
+   }],
+  
+  people: [
+    {name:"Lois Lane",
+    relationship: "girlfriend",
+    },
+    {name: "Iron man",
+    relationship: "Drinking buddy",
+    },
+    {name: "Spider Man",
+    relationship: "Coffee buddy"
+    }
+    ],
+   
+   listPowers: function() {
+     this.powers.forEach(function(power){
+       console.log(power["name"] + " means superman can " + power["description"]);
+     });
+   },
+    listPeople: function() {
+    this.people.forEach(function(people){
+      console.log(people["name"] + " is superman's " + people["relationship"]);
+    });
+  }
   suitUp: function() {
    if(superhero.isWearingSuit) {
      return "I'm already wearing my suit!";
@@ -302,22 +51,73 @@ whatDayIsIt(dayOfWeek); */
 };
 
 console.log(superhero);
-console.log(superhero.suitUp()); */
+superhero.listPowers();
+superhero.listPeople();
+//console.log(superhero.suitUp());*/
 
-/*let motorbike = {
-  firstName: "Yamaha",
-  secondName: "MT-07",
-  color: "Grey",
- isNotRunning: false,
-  startBike: function() {
-   if(this.isNotRunning) {
-     return "Start the bike!";
-  }else {
-    this.isNotRunning = true;
-    return "Do a wheelie!";
-  }
+//------------------------------------------
+
+/*let Hero = function(firstName, secondName, title, homeCity) {
+  this.firstName = firstName;
+  this.secondName = secondName;
+  this.title = title;
+  this.homeCity = homeCity;
+  this.wearingSuit = false;
+  this.toggleSuit = function() {
+    if(this.wearingSuit) {
+      this.wearingSuit = false;
+    console.log("Removing my suit");
+  } else {
+    this.wearingSuit = true;
+    console.log("suiting up!");
+    }
+  };
+};
+Hero.prototype.whoAmI = function() {
+  return "I am " + this.title;
+};
+let superman = new Hero("Clark", "Kent", "Superman", "Metropolis");
+Hero.prototype.weakness = "";
+superman.weakness = "kryptonite";
+
+let stringy = JSON.stringify(superman);
+console.log(typeof stringy);
+console.log(typeof JSON.parse(stringy));
+
+console.log(superman.weakness);
+console.log(superman.whoAmI());
+console.log(superman.firstName + " " + superman.secondName + " is " +superman.title);
+let batman = new Hero("Bruce", "Wayne", "Batman", "Gotham");
+console.log(batman.firstName + " " + batman.secondName + " is " +batman.title);
+console.log(batman.title + " vs " + superman.title); */
+//-----------Blaze it---------------
+
+/*let Vehicle = function(type, make, color, year, engine) {
+  this.type = type;
+  this.make = make;
+  this.color = color;
+  this.year = year;
+  this.engine = engine;
+  this.engineStarted = false;
+  this.toggleEngine=function() {
+    if(this.engineStarted) {
+      this.engineStarted = false;
+      console.log("Starting the engine");
+    } else {
+      this.engineStarted = true;
+      console.log("Stopping the engine");
+    }
   }
 };
+Vehicle.prototype.flashLights = function() {
+  return "The lights are now flashing on the " + this.make;
+};
 
-console.log(motorbike);
-console.log(motorbike.startBike()); */
+let myCar = new Vehicle("car", "Volkswagen", "silver", "2004", "1600cc");
+console.log("My " + myCar.type + " is a " + myCar.color + " " + myCar.engine + " " + myCar.make + " from " + myCar.year);
+let myBike = new Vehicle("Bike", "Yamaha MT-07", "Matte Grey", "2014", "700cc");
+console.log("My " + myBike.type + " is a " + myBike.color + " " + myBike.engine + " " + myBike.make + " from " + myBike.year);
+console.log(myCar.flashLights())
+console.log(myBike.flashLights())
+           */
+//------------------------------------------            
