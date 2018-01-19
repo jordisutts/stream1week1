@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+    body {
+        color: green;
+    }
+        #function {
+            display: none;
+            color: blue;
+            font-size: 3em;
+            background-color: red;
+        }
+        #answers {
+            width: 100px;
+            height: 250px;
+            background-color:#eee;
+            border: 2px solid black;
+            color:blue;
+        }
+    </style>
+</head>
+<body>
+  <!--  <form name="uniForm" onsubmit= "formSubmitted()">
+        Enter your name: <input type='text' name='name'>
+        Enter your email: <input type='email' name='email'>
+        <input type="submit" value="submit">
+        <p id='submitted'>Your form was submitted successfully!</p>
+    </form>  -->
+    <div id="answers">
+    <ul id = "myList"></ul>
+    <script>
+        let number = prompt("enter a number between 1 and 20");
+        for(let i=0; i < 12; i++) { 
+            document.getElementById("myList").innerHTML += "<li>" + i*number + "</li>"
+        }
+//    function formSubmitted() {
+//            document.getElementById("submitted").style.display='block';
+//          let name = document.forms["uniForm"]["name"].value;
+//        let email = document.forms["uniForm"]["email"].value;
+//      alert("Hey " + name + ", we will respond to you by email to: " + email);
+//        }
+    </script>
+    </div>
+</body>
+</html>

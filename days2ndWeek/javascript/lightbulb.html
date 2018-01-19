@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>JavaScript test</title>
+</head>
+<body>
+    <h1>Welcome</h1>
+    <h2 id="heading"></h2>
+    
+<button onclick="document.getElementById('myImage').src='./images/bulbon.gif'">Turn on the light</button>
+        <img id="myImage" src="./images/bulboff.gif" style="width:100px">
+    <button onclick="document.getElementById('myImage').src='./images/bulboff.gif'">Turn off the light</button>
+   
+<script>
+    let ans;
+        let head = document.getElementById("heading");
+        ans = confirm("Do you want the light on?:");
+        if (ans) {
+            head.textContent = "The light is on!";
+             document.getElementById("myImage").src = "./images/bulbon.gif";
+        } else {
+             document.getElementById("myImage").src ="./images/bulboff.gif";
+             document.getElementById('heading').style.color = "blue";
+             document.getElementById('heading').style.fontSize = "3em";
+             document.getElementById('heading').style.textContent = "It's DARK in here!";
+        }
+    </script>
+
+</body>
+</html>
